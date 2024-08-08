@@ -21,6 +21,11 @@ public class CeilingBS {
        int start=0;
        int end=arr.length;
 
+       //If my target element is greater than last number of asc element, means graeter than even 19 incase, then we can't find it and 
+       if(target > arr[arr.length-1]){
+           return -1;
+       }
+
        while(start <= end){
           int mid= start + (end-start)/2;
 
